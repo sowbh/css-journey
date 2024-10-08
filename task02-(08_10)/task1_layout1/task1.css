@@ -1,0 +1,65 @@
+.container{
+    width: 400px;
+    /* height: 400px; */
+    border-width: 2px;
+    border-style: solid;
+}
+
+.header{
+    height: 90px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* grouping selectors */
+.nav-1, .nav-2{
+    width: 80px;
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+
+    /* shortcut for margin 
+    margin: top right bottom left; (margin for all four sides of an element in one line)
+    or margin: single_value; (for all sides) */
+
+    /* margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; */
+
+    margin: 10px;
+
+    display: inline-block;
+}
+
+/* margin-right on nav-1 to push nav-2 to the right */
+.nav-1{
+    margin-right: 160px;
+}
+
+/* type selector */
+section{
+    width: 100px;
+    height: 200px;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer{
+    height: 90px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+}
+
+/* universal selector(these styles are applicable for all tags) */
+/* to override specificity use !important */
+*{
+    border-width: 4px !important;
+}

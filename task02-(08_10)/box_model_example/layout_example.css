@@ -1,0 +1,50 @@
+.container{
+    width: 500px;
+    /* height: 500px; */
+    border-width: 2px;
+    border-style: solid;
+}
+
+.header{
+    height: 100px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.main{
+    /* height: 200px; */
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.item{
+    width: 135px;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid;
+
+    /* Elements with display: inline-block appear side by side */
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.footer{
+    /* it takes the container's width */
+    height: 100px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}

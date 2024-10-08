@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about css styles, css selectors and its priority</title>
+    
+    <!-- external css -->
+    <link rel="stylesheet" href="./example1.css">
+    
+    <!-- internal css -->
+    <style>
+        #b{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- all about css styles, css selectors and its priority -->
+    <!-- simple selectors and its specificity -->
+
+    <!-- inline css -->
+    <h1 class="a" id="b" style="color: darkblue;">Hello</h1>
+
+    <!-- here, all three styles are applied in a single file(example1.html) then first preference is given to;
+      inline css, 
+      then internal css and 
+      lastly external css  -->
+</body>
+</html>

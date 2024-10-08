@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about css styles, css selectors and its priority</title>
+    <style>
+        #a{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- what if? -->
+    <h1 id="a">Hey there!</h1>
+    <style>
+        h1{
+            color: violet;
+        }
+    </style>
+
+    <!-- Here, the <h1> text will be displayed in yellowgreen because the #a ID selector has a higher specificity than the h1 tag selector -->
+
+</body>
+</html>

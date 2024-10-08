@@ -1,0 +1,48 @@
+.container{
+    width: 400px;
+    /* height: 400px; */
+    border-width: 2px;
+    border-style: solid;
+}
+
+.header{
+    height: 100px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+}
+
+.nav-bar{
+    width: 75px;
+    height: 75px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    display: inline-block;
+
+    margin-left: 25px;
+}
+
+.main, .aside{
+    height: 260px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    display: inline-block;
+}
+
+.main{
+    width: 220px;
+    
+}
+
+.aside{
+    width: 120px;
+}
+
+.footer{
+    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+}

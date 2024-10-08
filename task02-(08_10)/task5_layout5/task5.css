@@ -1,0 +1,76 @@
+.container{
+    width: 400px;
+    /* height: 400px; */
+    border-width: 2px;
+    border-style: solid;
+}
+
+header {
+    height: 90px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    position: relative; 
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    
+    /* border-radius=50 with same width and height => circle */
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block; 
+    margin: 10px;
+
+    /* aligns with the middle of adjacent inline elements */
+    vertical-align: middle; 
+
+    margin-right: 190px;
+}
+
+.hamburger {
+    /* change cursor on hover */
+    cursor: pointer; 
+    display: inline-block; 
+
+    /* aligns vertically with the circle */
+    vertical-align: middle; 
+
+    /* spacing between the circle and hamburger */
+    margin-left: 20px; 
+
+    /* to align vertically with the circle */
+    margin-top: 10px; 
+
+}
+
+.line {
+    /* makes each line a block */
+    display: block; 
+    width: 30px; 
+
+    /* height of each line */
+    height: 4px; 
+    background-color: black; 
+
+    /* space between lines */
+    margin: 5px 0; 
+}
+
+main{
+    height: 195px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    border-radius: 34px;
+}
+
+footer{
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 18px;
+    margin: 10px;
+}
