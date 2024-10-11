@@ -1,0 +1,77 @@
+section {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-left: 25px;
+    margin-top: -42px;
+
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 25px;
+}
+.hamburger>ion-icon{
+    transition: all 0.4s ease;
+}
+
+.hamburger>ion-icon:hover{
+    background-color: rgb(216, 215, 215);
+    padding: 8px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/* .hamburger~span:hover{
+    background-color: rgb(216, 215, 215);
+    padding: 5px;
+    /* width: 50px;
+    height: 50px; */
+    /* transition: all 0.4s ease;
+} */
+
+.food,
+.mail {
+    margin-left: 500px;
+    transition: all 0.4s ease;
+}
+
+.food:hover, 
+.mail:hover {
+    background-color: lightgray;
+    /* optional */
+    padding: 8px; 
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 8px 0px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Karma", serif;
+}
+
+/* to add whitespace in the section 3's p tag */
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
