@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width for the sidebar */
+    width: 200px; 
+    /* full height */
+    height: 100%; 
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    /* to specify the type of marker (bullet or number) that should be used for list items within an ordered or unordered list */
+    /* list-style-type: none; */
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: grey;
+}
+
+h1{
+    margin: 20px;
+}
+
+.content {
+    margin-left: 220px; /* Offset the content by the width of the sidebar */
+    padding: 20px;
+    text-align: justify;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

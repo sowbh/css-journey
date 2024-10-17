@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* width: 600px; */
+    border: 2px solid;
+    display: flex;
+    /* depends on flex direction either row or column */
+    gap: 10px;
+
+    height: 500px;
+
+    /* align-items works only when parent has height. and it works on cross axis(y-axis) */
+    align-items: center;
+
+    /* justify-content works only when parent has width. and it works on main axis(x-axis) 
+    here width:100% */
+    justify-content: space-evenly; 
+}
+
+.container>.item{
+    padding: 20px;
+    /* margin: 10px; */
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.item-1{
+    background-color: blue;
+}
+
+.item-2{
+    background-color: red;
+}
+
+.item-3{
+    background-color: yellow;
+}
+
+.item-4{
+    background-color: green;
+}

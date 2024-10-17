@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid;
+    display: flex;
+    gap: 10px;
+
+    /* changing direction(by default flex-direction:row */
+    /* flex-direction: column; */
+
+    /* prevents overflow of items */
+    flex-wrap: wrap;
+
+    height: 700px;
+    align-items: end;
+
+    /* align-contents is used whenever we use flex-wrap 
+    the space which appears when align-items property is applied will be disappeared*/
+    align-content: center;
+
+    /* horizontally center */
+    justify-content: center;
+}
+
+.item{
+    padding: 20px;
+    /* margin: 10px; */
+    text-align: center;
+    font-size: 1.5rem;
+    /* width: 500px; */
+}
+
+.item-1, .item-3, .item-5, .item-7, .item-9, .item-11{
+    background-color: skyblue;
+}
+
+.item-2, .item-4, .item-6, .item-8, .item-10, .item-12{
+    background-color: coral;
+}

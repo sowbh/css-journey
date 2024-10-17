@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.head-container {
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.head-container:hover {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.head {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.side-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.side:hover{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.side {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 5px;
+    transition: background-color 0.4s ease;
+}
+
+/* main content */
+main {
+    /* space for fixed header */
+    margin-top: 60px; 
+    padding: 20px;
+}
+
+/* image with Overlay Text */
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+}
+
+.overlay-text>span{
+    background-color: black;
+    padding: 15px;
+}
+
+/* projects section */
+.projects {
+    margin-top: 40px;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* each project box */
+.project {
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    vertical-align: top;
+    position: relative;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+}
+
+.house-name {
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* z-index: -1; */
+    z-index: 1;
+    color: white;
+    padding: 15px;
+}

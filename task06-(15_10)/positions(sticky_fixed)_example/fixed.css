@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    background-color: royalblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main{
+    /* vh=> viewport height */
+    height: 100vh;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: rosybrown;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    height: 200px;
+    font-size: 2rem;
+    padding: 20px;
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+}
+
+.icon-container{
+    border: 2px solid;
+    position: fixed;
+    z-index: 1;
+    bottom: 100px;
+    right: 100px;
+}
+
+.icon-container>div{
+    width: 50px;
+    height: 50px;
+}
+
+.item-1{
+    background-color: darkgoldenrod;
+}
+
+.item-2{
+    background-color: darkcyan;
+}
+
+.item-3{
+    background-color: darkmagenta;
+}

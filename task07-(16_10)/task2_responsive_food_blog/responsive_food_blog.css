@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.hamburger, .food, .mail {
+    padding: 10px;
+}
+
+.hamburger>ion-icon {
+    transition: all 0.4s ease;
+    padding: 8px;
+}
+
+.hamburger>ion-icon:hover {
+    background-color: rgb(216, 215, 215);
+    cursor: pointer;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.food:hover, 
+.mail:hover {
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    /* wrapping for smaller screen */
+    flex-wrap: wrap;
+    /* space between items */
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* full width by default */
+    width: 100%; 
+    /* limit */
+    max-width: 300px; 
+    /* space around each section */
+    margin: 10px; 
+}
+
+img {
+    display: block;
+    width: 100%; 
+    /* height: auto;  */
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align-last: center;
+    margin: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align-last: center;
+}
+
+/* to add whitespace in the section 3's p tag */
+.content {
+    margin-top: 20px;
+    /* text-align: center; */
+} 

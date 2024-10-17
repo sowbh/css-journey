@@ -1,0 +1,15 @@
+/* to resolve margin and padding issue */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
+}

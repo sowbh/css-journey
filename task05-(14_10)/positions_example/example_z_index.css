@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 22px;
+    text-align: justify;
+}
+
+/* pseudo selector */
+p::before{
+    content: '->';
+}
+
+/* here, position:absolute; doesn't work because we didn't give width. it doesn't have document flow */
+/* div{
+    background-color: plum;
+    height: 300px;
+    position: absolute;
+} */
+
+div{
+    background-color: hotpink;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    /* overlapping of element occurs in html document, use z-index to unwrap it*/
+    z-index: -1;
+}

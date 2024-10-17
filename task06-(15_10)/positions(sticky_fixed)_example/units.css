@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* this wont make a page responsive */
+/* .container{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+} */
+
+/* this wont make an image responsive */
+/* img{
+    width: 100%;
+} */
+
+/* in order to make a webpage responsive */
+.container{
+    /* vw=>viewport(entire white screen) width */
+    width: 50vw;
+    /* vh=>viewport(entire white screen) height */
+    height: 50vh;
+    background-color: lightseagreen;
+}
+
+img{
+    /* 50% of the 50vw */
+    width: 50%;
+    /* 50% of the 50vh */
+    height: 50%;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    border: 10px solid;
+    /* for centering  the div*/
+    /* the element must have a defined width (ie; width: 50%; or width: 300px;), if the width is not specified, the element will take up the full width of its parent, and auto will have no effect. */
+    margin: 0 auto;
+}
+
+/* child selector */
+.container>div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    margin: 4px;
+    position: absolute;
+    /* now all three items are overlapped. 
+    lets provide z-index value. higher value= higher priority
+    uncomment and watch the differences*/
+}
+
+.item-1{
+    background-color: salmon;
+    /* z-index: 3; */
+}
+
+.item-2{
+    background-color: royalblue;
+    z-index: 2;
+}
+
+.item-3{
+    background-color: palevioletred;
+    /* z-index: 1; */
+}
