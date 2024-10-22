@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (orientation: portrait) {
+    div{
+        background-color: red;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    div{
+        background-color: blue;
+    }
+}

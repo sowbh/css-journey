@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;  
+    border: 2px solid;
+    height: 500px;
+    align-items: start;  
+}
+
+
+.item{
+    padding: 20px;  
+    text-align: center;  
+    font-size: 1.5rem;
+
+    /* flex-grow: ability to grow if space is available */
+    /* all items will grow equally to fill the container */
+    flex-grow: 1;  
+
+    /* flex-shrink: Defines the ability to shrink if space is tight. 
+       setting to 1 allows the items to shrink proportionally if needed. */
+    flex-shrink: 1;
+
+    /* flex-basis: sets the base size before flex-grow or flex-shrink comes. */
+    /* each item starts with a width of 400px */
+    /* if flex-basis is used then width is not required. browser takes flex-basis value when compared to width */
+    flex-basis: 400px;  
+
+    /* flex shorthand combines flex-grow, flex-shrink, and flex-basis.
+       you can skip flex-grow, flex-shrink, and flex-basis when using flex shorthand.
+       Example: 'flex: 1 1 400px' means:
+       - grow equally (1), 
+       - shrink proportionally (1), 
+       - base size of 400px. */
+    /* this overrides flex-grow, flex-shrink, and flex-basis settings */
+    flex: 1 1 400px;  
+}
+
+
+.item-1{
+    background-color: royalblue;
+    /* centers this item vertically within the container */
+    /* align-items works on whole item, whereas align-self works on only specified child */
+    align-self: center;  
+    
+    /* order: moves the element based on the order, without modifying the entire code */
+    /* higher order=highest priority */
+    /* this will appear third in the visual order */
+    order: 3;  
+}
+
+.item-2{
+    background-color: palevioletred;
+    /* this will move to the first position in the visual order */
+    order: -1;  
+}
+
+.item-3{
+    background-color: gold;
+    /* this will appear second */
+    order: 2;  
+}
+
+.item-4{
+    background-color: red;
+    /* aligns this item at the bottom (end) */
+    align-self: end;  
+}
+
+.item-5{
+    background-color: peru;
+    /* this will appear first after item-2 due to order */
+    order: 1;  
+}

@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (width >= 600px) {
+    div{
+        /* box-shadow: horizontal-offset vertical-offset blur-radius color(rgb/rgba); */
+        box-shadow: 20px 20px 10px rgb(125, 62, 187);
+    }
+}

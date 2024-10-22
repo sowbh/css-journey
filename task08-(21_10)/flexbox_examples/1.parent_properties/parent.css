@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 500px;
+    border: 2px solid;
+    align-items: start;
+    justify-content: center;
+
+    /* whenever wrapping occurs, align-content property is used to manage the space between wrapped lines */
+    /* allows flex items to wrap onto the next line if there's not enough space */
+    flex-wrap: wrap;
+    align-content: center;
+    /* a gap of 10px between flex items for spacing  */
+    gap: 10px;
+}
+
+.item{
+    /* height: 100px; */
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.item-1{
+    background-color: royalblue;
+}
+
+.item-2{
+    background-color: palevioletred;
+}
+
+.item-3{
+    background-color: gold;
+}
+
+.item-4{
+    background-color: red;
+}
+
+.item-5{
+    background-color: peru;
+}
