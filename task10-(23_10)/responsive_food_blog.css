@@ -2,15 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    /* sticks to the top */
+    top: 0; 
+    background-color: white; 
+    /* it stays on top of other content */
+    z-index: 999; 
 }
 
+
 span{
-    position: sticky;
     padding: 10px;
     margin: 14px;
     font-size: 1.5rem;
@@ -53,6 +60,8 @@ img{
     display: flex;
     justify-content: center;
     gap: 35px;
+    /* to add some space at the botoom so that page navigation doesn't stick at the end of the page */
+    margin-bottom: 30px;
 }
 
 /* page navigator styling */
