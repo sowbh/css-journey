@@ -1,0 +1,29 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    transition: 0.4s ease;
+}
+
+div:hover{
+    /* scaleX(2) width provided for div is multiplied by 2 */
+    /* transform: scaleX(2); */
+
+    /* scaleY(2) height provided for div is multiplied by 2 */
+    /* transform: scaleY(2); */
+
+    /* scale(4, 2) width value*4 and height value*2 */
+    transform: scale(4,2);
+
+}

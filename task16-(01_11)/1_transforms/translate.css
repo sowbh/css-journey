@@ -1,0 +1,29 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* translateX for x-axis */
+    /* transform: translateX(30px); */
+    transition: 0.4s ease;
+}
+
+div:hover{
+    /* translateY for y-axis */
+    /* transform: translateY(20px); */
+    
+    /* transform: translateX(-20px); */
+
+    /* combining both x and y axis */
+    transform: translate(20px, 30px);
+}

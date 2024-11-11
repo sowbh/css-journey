@@ -1,0 +1,43 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+
+    position: relative;
+    top: 70px;
+    left: 100px;
+    border: 10px solid white;
+
+}
+
+.rectangle {
+    width: 300px;
+    height: 100px;
+    background-color: green;
+
+}
+
+.rectangle::before {
+    content: '';
+    position: absolute;
+    top: 105px;
+    left: 8px;
+    width: 100px;
+    height: 24px;
+    background-color: green;
+    /* border: 10px solid; */
+    border-top-right-radius: 44px;
+}
+
+.rectangle::after {
+    content: '';
+    position: absolute;
+    top: 105px;
+    left: 227px;
+    width: 81px;
+    height: 24px;
+    background-color: green;
+    border-top-left-radius: 44px;
+
+}

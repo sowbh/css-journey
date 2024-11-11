@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border: 5px solid black;
+
+    /* Using background shorthand */
+    /* background: color image position/size repeat attachment origin clip; */
+    background: lightblue url('https://cdn.pixabay.com/photo/2023/05/23/18/12/hummingbird-8013214_960_720.jpg') 
+                center/cover no-repeat fixed border-box content-box;
+}

@@ -1,0 +1,55 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    /* border: 2px solid; */
+    padding: 20px;
+}
+
+button {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    transition: 0.4s ease;
+    margin: 100px auto;
+
+    background-image: url('./bean.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .translate:hover~.image{
+    transform: translate(-200px, 200px);
+}
+
+.container .scale:hover~.image{
+    transform: scale(2);
+}
+
+.container .skew:hover~.image{
+    transform: skew(45deg);
+}
+
+.container .rotate:hover~.image{
+    transform: rotate(90deg);
+}
+
+.container .rotate-scale:hover~.image{
+    transform: rotate(360deg) scale(1.2);
+}

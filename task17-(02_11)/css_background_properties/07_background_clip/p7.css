@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.box {
+    width: 250px;
+    height: 100px;
+    padding: 30px;
+    border: 10px solid blue;
+    background-color: lightgreen;
+    
+    /* background-clip: content-box; */
+    background-clip: border-box;
+    /* background-clip: padding-box; */
+}

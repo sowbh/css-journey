@@ -1,0 +1,47 @@
+html, body{
+    height: 100%;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+} */
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0%{
+        transform: translate(0px, 0px);
+        background-color: lightcoral;
+    }
+
+    25%{
+        transform: translateX(500px);
+        background-color: blue;
+    }
+
+    50%{
+        transform: translate(500px,500px);
+        background-color: red;
+    }
+
+    75%{
+        transform: translate(0px,500px);
+        background-color: green;
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+        background-color: yellow;
+    } 
+}

@@ -1,0 +1,33 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rosybrown;
+
+    animation-name: a;
+    animation-duration: 5s;
+
+    animation-iteration-count: 4;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes a {
+    from{
+        background-color: red;
+        transform: scale(1.4) rotate(360deg);
+    }
+
+    to{
+        background-color: rosybrown;
+    }
+}

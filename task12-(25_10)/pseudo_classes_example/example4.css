@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon{
+    font-size: 2rem;
+    margin: 20px;
+    padding: 12px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked+div{
+    display: block;
+    margin: 20px;
+}

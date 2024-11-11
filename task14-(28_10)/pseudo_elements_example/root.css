@@ -1,0 +1,20 @@
+:root{
+    --primary-color: #E8A75B;
+    --secondary-color: #000000;
+    --accent-color: #E908A9;
+
+    /* if image then;
+    syntax; --any-variable-name: url(''); */
+    --image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/600px-BMW.svg.png');
+}
+
+.container{
+    /* property: var(variable_name_written_in_root[here; --primary-color]) */
+    background-color: var(--primary-color);
+    width: 600px;
+    height: 600px;
+    border: 2px solid;
+
+    /* var(--image); where --image is inside root */
+    background-image: var(--image);
+}

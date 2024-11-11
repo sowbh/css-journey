@@ -1,0 +1,29 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.box{
+    width: 400px;
+    height: 500px;
+    border: 15px solid;
+
+    /* adding bg color for blending */
+    background-color: lightcoral;
+    background-image: url('https://cdn.pixabay.com/photo/2023/05/23/18/12/hummingbird-8013214_960_720.jpg');
+    background-size: cover;
+
+    /* background-blend-mode: screen; */
+    /* background-blend-mode: luminosity; */
+
+    /* background-blend-mode: darken; */
+    /* background-blend-mode: lighten; */
+
+    background-blend-mode: multiply;
+}

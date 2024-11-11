@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible child care for busy lives</title>
-    <link rel="stylesheet" href="./childcare.css">
+    <link rel="stylesheet" href="./childcare_hover.css">
 </head>
 
 <body>
@@ -14,6 +14,9 @@
         <div class="logo">
             <img src="./logo.PNG" alt="Logo image">
         </div>
+        
+        <!-- while using checkbox(this is mandatory) -->
+        <input type="checkbox" id="toggle-nav" class="nav-toggle">
 
         <!-- navbar -->
         <nav>
@@ -24,8 +27,10 @@
             <a href="#" class="contactus">CONTACT US</a>
         </nav>
 
-        <!-- hamburger -->
-        <ion-icon name="menu-outline" class="icon"></ion-icon>
+        <!-- hamburger while using small screen-->
+        <label for="toggle-nav" class="icon">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
 
     </header>
     

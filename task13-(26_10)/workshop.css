@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 14px;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* to move nav elemets towards right side */
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover,
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.signin {
+    background-color: blue;
+    padding: 14px 26px;
+    border: 2px solid white;
+    border-radius: 46px;
+}
+
+.signin a {
+    text-decoration: none;
+    color: white;
+}
+
+.signin a:hover {
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 1.5rem;
+    padding: 8px;
+    /* makes the background circular */
+    border-radius: 50%;
+    transition: background-color 0.4s ease;
+}
+
+nav span {
+    position: relative;
+}
+
+nav span p {
+    display: none;
+    border: 2px solid;
+    background-color: rgb(104, 103, 103);
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    /* tp prevent line break */
+    white-space: nowrap;
+
+    position: absolute;
+    right: -40px;
+    bottom: -54px;
+    font-size: 0.8rem;
+
+}
+
+.icon:hover {
+    background-color: rgb(199, 197, 197);
+    cursor: pointer;
+}
+
+span:hover p {
+    display: block;
+}
+
+.logo>img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search {
+    padding: 12px 50px;
+    border-radius: 20px;
+    width: 60vw;
+    border: 2px solid rgb(219, 216, 216);
+    margin: 20px;
+    /* positioned relative for absolute child elements */
+    position: relative;
+}
+
+.search:focus {
+    box-shadow: 2px 2px 2px gray;
+    outline: none;
+}
+
+.magnifying-glass,
+.google-mic,
+.google-lens {
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+
+/* magnifying glass */
+.magnifying-glass {
+    left: 294px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* microphone */
+.google-mic {
+    right: 344px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* camera icon */
+.google-lens {
+    right: 296px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.google-mic p {
+    border: 2px solid;
+    background-color: rgb(104, 103, 103);
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+    white-space: nowrap;
+    font-size: 0.8rem;
+
+    position: absolute;
+    right: 10px;
+    bottom: -61px;
+}
+
+.google-lens p {
+    border: 2px solid;
+    background-color: rgb(104, 103, 103);
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+    white-space: nowrap;
+    font-size: 0.8rem;
+
+    position: absolute;
+    right: -67px;
+    bottom: -61px
+}
+
+.google-mic,
+.google-lens {
+    cursor: pointer;
+}
+
+.google-mic p,
+.google-lens p {
+    display: none;
+
+}
+
+.google-mic:hover p,
+.google-lens:hover p {
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.google_search,
+.iam_feeling {
+    background-color: white;
+    border: none;
+    padding: 10px;
+}
+
+.google_search a,
+.iam_feeling a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.google_search:hover,
+.iam_feeling:hover {
+    border: 1px solid gray;
+}
+
+.google_languages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 18px;
+    margin: 5px
+}
+
+footer{
+    background-color: #eeecec;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+
+    /* to stick footer to bottom */ 
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0; 
+}
+
+footer .menu{
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .location{
+    padding: 10px;
+}
+
+footer .menu .left, footer .menu .right{
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+}
+
+footer .menu .left a, footer .menu .right a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .menu .left a:hover, footer .menu .right a:hover {
+    text-decoration: underline;
+}
+

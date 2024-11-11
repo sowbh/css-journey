@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    /* justify-items: center;
+    align-items: center; */
+
+    /* in grid shorthand for align-items and justify-items is place-items */
+    place-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.grid-container{
+    width: 80%;
+    height: 80%;
+    border: 4px solid;
+    padding: 10px;
+    background-color: white;
+
+    gap: 10px;
+    display: grid;
+
+    /* when 250+250= 500px comes according to browser then grid gets stretched and filled within the grid-container */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+}
+
+.grid-container>*{
+    text-align: center;
+    padding: 20px;
+}
+
+.a {
+    background-color: rgb(69, 163, 69);
+}
+
+.b {
+    background-color: lightgreen;
+}
+
+.c {
+    background-color: red;
+}
+
+.d {
+    background-color: orange;
+}
+
+.e {
+    background-color: pink;
+}
+
+.f {
+    background-color: gray;
+}
+
+.g {
+    background-color: skyblue;
+}
+
+.h {
+    background-color: aquamarine;
+}

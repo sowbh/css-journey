@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    
+    /* if same width for some cols then use repeat function
+    repeat(times, size) */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.grid-container>*{
+    background-color: black;
+}
+
+.item1, .item2, .item8{
+    background-color: rgb(5, 172, 5);
+}
+
+.item3, .item5, .item6{
+    background-color: rgb(245, 44, 44);
+}
+
+.item4, .item7{
+    background-color: orange;
+}
+
+.item1{
+    grid-row: 1/4;
+}
+
+.item2{
+    grid-column: 2/4;
+}
+
+.item8{
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+/* if width <= 750px then all items should be in a single col and 8rows */
+@media screen and (max-width: 750px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    
+    /* in order to remove fraction values of grid-row and grid-column(which causes problem) */
+    .grid-container>*{
+        grid-column: auto;
+        grid-row: auto;
+    }
+}

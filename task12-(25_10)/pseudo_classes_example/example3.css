@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#name{
+    margin: 20px;
+}
+
+#name:focus{
+    border-color: yellowgreen;
+    border-radius: 2px;
+    outline: none;
+    padding: 14px;
+}
+
+#age:disabled{
+    padding: 20px;
+}

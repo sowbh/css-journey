@@ -1,0 +1,16 @@
+:root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+:root::after{
+    /* to display the pseudo-element */
+    content: '';
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    background-color: palevioletred;
+}

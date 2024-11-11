@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+/* parent */
+.grid-container{
+    display: grid;
+    height: 100vh;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    
+    /* to increase width */
+    grid-template-columns: 1fr 2fr 1fr;
+
+    /* to increase height */
+    grid-template-rows: 100px 1fr 100px;
+    gap: 10px;
+}
+
+/* child */
+.grid-container>*{
+    background-color: black;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* shorthand property for above is;
+    grid-column: start/end;
+    
+    similarly for grid-row-start and grid-row-end
+    grid-row: start/end;  */
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

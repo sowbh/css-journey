@@ -1,0 +1,25 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+div{
+    width: 80%;
+    height: 50%;
+    /* makes the element scrollable */
+    overflow-y: scroll; 
+    padding: 20px;
+    background-image: url('https://cdn.pixabay.com/photo/2020/04/24/02/15/sunrise-5084755_960_720.jpg');
+      
+    
+    /* background-attachment: local; */
+    /* background-attachment: fixed; */
+    background-attachment: scroll;
+    background-size: cover;
+}

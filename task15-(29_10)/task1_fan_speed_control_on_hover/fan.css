@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* height: 100vh;  */
+}
+
+.container {
+    margin: 20px;
+    width: 500px;
+    border: 2px solid;
+
+}
+
+.button {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+}
+
+.fan {
+    width: 150px;
+    height: 150px;
+    margin: 64px 158px;
+    transition: transform 0.4s;
+}
+
+.speed1:hover,
+.speed2:hover,
+.speed3:hover,
+.speed4:hover {
+    cursor: pointer;
+}
+
+/* Speeds on button hover */
+/* slow speed */
+.speed1:hover~.fan {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+
+/* medium speed */
+.speed2:hover~.fan {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+/* fast speed */
+.speed3:hover~.fan {
+    transform: rotate(360deg);
+    transition-duration: 0.25s;
+}
+
+/* fastest speed */
+.speed4:hover~.fan {
+    transform: rotate(360deg);
+    transition-duration: 0.1s;
+}

@@ -1,0 +1,30 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+
+div{
+    width: 100%;
+    height: 100%;
+
+    /* for regular image */
+    /* you can direct image by downloading it in your project folder or by copying the image link */
+    background-image: url('https://cdn.pixabay.com/photo/2024/02/26/19/57/dog-8598827_960_720.jpg');
+
+    /* for gradients */
+    /* linear-gradients */
+    /* background: linear-gradient(blue, pink); */
+
+    /* radial-gradients */
+    /* background: radial-gradient(circle,red, yellow); */
+
+    /* you can use multiple images */
+    /* background: url('https://cdn.pixabay.com/photo/2024/02/26/19/57/dog-8598827_960_720.jpg'), url('https://cdn.pixabay.com/photo/2016/05/16/21/07/football-1396740_960_720.jpg'); */
+
+}

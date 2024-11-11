@@ -26,6 +26,13 @@ header {
     cursor: pointer;
 }
 
+/* to hide the checkbox */
+.nav-toggle{
+    display: none;
+}
+
+/* this nav-toggle, navbar and hamburger relation is written inside media queries directly  */
+
 nav {
     display: flex;
     gap: 15px;
@@ -145,8 +152,29 @@ nav a:hover {
         padding: 8px;
     }
 
+    /* navbar, nav-toggle and hamburger relation */
     nav {
         display: none;
+
+        /* display: flex; */
+        flex-direction: column;
+        background-color: rgb(245, 241, 241);
+        border: 1px solid white;
+        border-radius: 12px;
+        padding: 8px; 
+        
+        
+        position: absolute; 
+        left: 0; 
+        /* position below header */
+        top: 100%; 
+        width: 50%; 
+
+        transition: all 0.45s ease; 
+    }
+
+    .nav-toggle:checked + nav{
+        display: flex;
     }
 
     .icon {
@@ -154,7 +182,7 @@ nav a:hover {
         padding: 18px;
         font-size: 2.5rem;
     }
-
+    
     .container {
         width: 68%;
         bottom: -35px;
@@ -170,8 +198,29 @@ nav a:hover {
         font-size: 1rem;
     }
 
+    /* navbar, nav-toggle and hamburger relation */
     nav {
         display: none;
+        
+        /* display: flex; */
+        flex-direction: column;
+        background-color: rgb(245, 241, 241);
+        border: 1px solid white;
+        border-radius: 12px;
+        padding: 8px; 
+
+
+        position: absolute; 
+        left: 0; 
+        /* position below header */
+        top: 100%; 
+        width: 50%; 
+
+        transition: all 0.45s ease;
+    }
+
+    .nav-toggle:checked + nav{
+        display: flex;
     }
 
     .icon {

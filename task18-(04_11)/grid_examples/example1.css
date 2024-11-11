@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+
+/* parent */
+.grid-container{
+    display: grid;
+    /* for cols. here; 3values= 3cols */
+    /* to occupy remaining space 1fr (same as flex-grow) */
+    /* use of fr makes the grid element/grid container responsive */
+    grid-template-columns: 100px 1fr 100px;
+    /* gap: 10px;
+    padding: 4px;
+    margin: 4px;
+    border: 2px solid; */
+}
+
+/* child */
+.grid-container>div{
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid;
+}

@@ -1,0 +1,27 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+div{
+    width: 100%;
+    height: 100%;
+
+    background-image: url('https://cdn.pixabay.com/photo/2023/04/11/13/27/bird-7917250_960_720.jpg');
+
+    /* left-right top-bottom */
+    /* background-size: 86px 90px; */
+
+    /* background-size: cover; */
+
+    background-size: contain;
+
+    /* multiple value for multiple images */
+    /* background-size: 80px 90px, contain; */
+}

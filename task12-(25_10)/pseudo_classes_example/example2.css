@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div p{
+    font-size: 2rem;
+}
+
+div p:first-child{
+    background-color: aqua;
+}
+
+div p:last-child{
+    background-color: chartreuse;
+}
+
+/* manually selecting the child of div(using number, even/odd) */
+div p:nth-child(even){
+    color: blueviolet;
+}
+
+div p:nth-child(3){
+    color: coral;
+}
+
+div p:nth-child(odd){
+    font-size: 3rem;
+}

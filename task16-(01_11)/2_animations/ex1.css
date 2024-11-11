@@ -1,0 +1,32 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+
+    /* these two are mandatory if you want animations to work */
+    animation-name: colorChanging;
+    animation-duration: 5s;
+}
+
+/* animation-name and identifier should be same */
+@keyframes colorChanging {
+    from{
+        background-color: lightblue;
+        border-radius: 50%;
+    }
+
+    to{
+        background-color: lightcoral;
+    }
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    width: 200px;
+    transition: transform 4s;
+}
+
+img:hover{
+    /* x-axis */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateX(90deg); */
+    /* transform: rotateX(360deg); */
+
+    /* y-axis */
+    /* transform: rotateY(180deg); */
+
+    /* rotate - rotates in 2D(clockwise and anti-clockwise)*/
+    transform: rotate(360deg);
+}

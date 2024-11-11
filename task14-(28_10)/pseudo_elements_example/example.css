@@ -1,0 +1,51 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* first-letter */
+.first::first-letter{
+    color: blue;
+    font-size: 2rem;
+}
+
+/* first-line */
+.second::first-line{
+    color: red;
+    font-style: italic;
+}
+
+/* selection */
+.third::selection{
+    color: #108c75;
+}
+
+input{
+    font-size: 2rem;
+    margin: 20px;
+}
+
+/* placeholder */
+input::placeholder{
+    text-align: center;
+    color: coral;
+}
+
+/* marker */
+li::marker{
+    content: '→ ';
+    font-size: 2rem;
+}
+
+/* before */
+.past::before{
+    content: '♣ ';
+    color: green;
+}
+
+/* after */
+.present::after{
+    content: ' ♦';
+    color: purple;
+}

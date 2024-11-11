@@ -1,0 +1,31 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+
+    animation-name: colorChanging;
+    animation-duration: 5s;
+}
+
+@keyframes colorChanging {
+    from{
+        background-color: lightsalmon;
+        transform: translateY(-200px);
+    }
+
+    to{
+        background-color: aqua;
+        transform: translateY(-200px);
+    }
+}

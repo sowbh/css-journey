@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+
+    /* it is applicable for child ie; nav */
+    justify-content: space-between;
+
+    padding: 14px;
+    background-color: rgb(187, 182, 182);
+    font-size: 1.8rem;
+    align-items: center;
+}
+
+span{
+    font-size: 2rem;
+}
+
+.icon{
+    font-size: 2rem;
+    display: none;
+}
+
+/* a is an indirect child of header so use display: contents; then flex properties work here  */
+/* it gives equal space */
+nav{
+    display: contents;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu{
+    display: none;
+    transition: 0.4s ease;
+}
+
+
+/* width < 550px */
+@media screen and (max-width: 550px){
+    nav{
+        display: none;
+    }
+
+    .icon{
+        display: flex;
+    }
+
+    #menu:checked+nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 66px;
+        border-radius: 4px;
+        left: 0;
+        align-items: start;
+        font-size: 1.8rem;
+        background-color: rgb(187, 182, 182);
+        gap: 20px;
+        width: 100%;
+    }
+}
